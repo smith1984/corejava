@@ -22,8 +22,8 @@ class ObjectStreamTest
       staff[1] = harry;
       staff[2] = tony;
 
-      // save all employee records to the file employee.dat         
-      try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("employee.dat"))) 
+      // save all employee records to the file employee.dat
+      try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("employee.dat")))
       {
          out.writeObject(staff);
       }
