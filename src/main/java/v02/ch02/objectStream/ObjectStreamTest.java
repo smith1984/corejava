@@ -23,12 +23,12 @@ class ObjectStreamTest
       staff[2] = tony;
 
       // save all employee records to the file employee.dat
-      try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("employee.dat")))
+      try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("./src/main/java/v02/ch02/objectStream/employee.dat")))
       {
          out.writeObject(staff);
       }
 
-      try (ObjectInputStream in = new ObjectInputStream(new FileInputStream("employee.dat")))
+      try (ObjectInputStream in = new ObjectInputStream(new FileInputStream("./src/main/java/v02/ch02/objectStream/employee.dat")))
       {
          // retrieve all records into a new array
          
